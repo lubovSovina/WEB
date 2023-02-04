@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "Barsik",
     "age": 7,
     "meals": [
@@ -9,14 +8,4 @@
       "Hills",
       "Brit Care"
     ]
-  },
-  {
-    "name": "Mursik",
-    "age": 3,
-    "meals": [
-      "Purina",
-      "Hills",
-      "Brit Care"
-    ]
   }
-]

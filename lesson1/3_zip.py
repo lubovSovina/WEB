@@ -29,3 +29,10 @@ with ZipFile('archive.zip', 'w') as myzip:
     myzip.write('test.txt')
     print(myzip.namelist())
 
+# для добавления файла в уже существующий архив будем работать с ним с ключом a
+with ZipFile('archive.zip', 'a') as myzip:
+    myzip.write('test.txt')
+    print(myzip.namelist())
+
+# вытаскивает из архива все содержимое в указанную папку
+ZipFile.extractall(path=None, members=None, pwd=None)
