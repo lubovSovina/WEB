@@ -1,4 +1,5 @@
 import argparse
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--name')
 parser.add_argument('-up', '--up_case', action='store_true',
