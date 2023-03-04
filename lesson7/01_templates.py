@@ -12,7 +12,7 @@ def index():
     params = {}
     params['title'] = 'Домашняя страница'
     params['username'] = 'Ученик Лицея Академии Яндекса'
-    return render_template('01_index.html', **params)
+    return render_template('index.html', **params)
 
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')

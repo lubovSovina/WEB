@@ -1,7 +1,7 @@
 import datetime
 
-from lesson8.data.news import News
-from lesson8.data.users import User
+from news_app.data.news import News
+from news_app.data.users import User
 
 
 def add_users(db_sess):
