@@ -1,4 +1,5 @@
 import requests
+
 api_server = "http://static-maps.yandex.ru/1.x/"
 
 lon = "37.530887"

@@ -23,7 +23,6 @@ with ZipFile('archive.zip') as myzip:
     with myzip.open('1.txt', 'r') as file:
         print(file.read().decode('utf-8'))
 
-
 # по аналогии с чтением файлов из архива их можно туда и записывать
 with ZipFile('archive.zip', 'w') as myzip:
     myzip.write('test.txt')

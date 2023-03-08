@@ -9,12 +9,11 @@ from flask_login import LoginManager, login_user, logout_user, login_required, c
 from news_app.data import news_api
 from news_app.forms.news import NewsForm
 from flask import make_response, jsonify
+
 app = Flask(__name__)
 login_manager = LoginManager()
 login_manager.init_app(app)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
-
-
 
 
 @app.errorhandler(404)
@@ -165,6 +164,8 @@ def edit_news(id):
                            title='Редактирование новости',
                            form=form
                            )
+
+
 @app.route('/news_delete/<int:id>', methods=['GET', 'POST'])
 @login_required
 def news_delete(id):
@@ -178,6 +179,7 @@ def news_delete(id):
     else:
         abort(404)
     return redirect('/')
+
 
 def old_main():
     db_session.global_init("db/blogs.db")

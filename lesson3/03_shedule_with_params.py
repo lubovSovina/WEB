@@ -9,7 +9,7 @@ def greet(name):
     print('Hello', name)
     i += 1
     if i == 5:
-        return schedule.CancelJob # Отменяем задачу после 5 запуска
+        return schedule.CancelJob  # Отменяем задачу после 5 запуска
 
 
 schedule.every(1).to(3).seconds.do(greet, name='Yandex')

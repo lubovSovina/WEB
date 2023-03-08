@@ -2,6 +2,8 @@ import json
 
 from flask import Flask, render_template, redirect
 
+from login_form import LoginForm
+
 app = Flask(__name__)
 
 

@@ -9,19 +9,16 @@ print(os.name)
 
 print(os.getcwd())  # имя текущего каталога
 
-
 os.chdir('files')  # смены текущего каталога
 print(os.getcwd())
 
 os.chdir('..')  # из текущего каталога в родительский
 print(os.getcwd())
 
-
 # существует ли файл, доступен ли файл для чтения или записи
 print(os.access("1.txt", os.F_OK))
 print(os.access("1.txt", os.R_OK))
 print(os.access("1.txt", os.W_OK))
-
 
 print(os.listdir())  # получение списка файлов и вложенных каталогов
 # можно передать относительный или абсолютный адрес каталога

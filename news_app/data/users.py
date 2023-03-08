@@ -2,7 +2,7 @@ import datetime
 import sqlalchemy as sa
 from flask_login import UserMixin
 from sqlalchemy import orm
-from .db_session import SqlAlchemyBase
+from db_session import SqlAlchemyBase
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy_serializer import SerializerMixin
 

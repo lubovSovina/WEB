@@ -73,4 +73,3 @@ with open('files/cats_5.json', 'w') as file:
 with open('files/cats_6.json', 'w') as file:
     json.dump(data, file, ensure_ascii=False,
               indent=2, sort_keys=True)
-
